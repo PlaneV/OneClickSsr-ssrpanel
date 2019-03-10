@@ -1,5 +1,6 @@
 # OneClickSsr-ssrpanel
 一键安装ssrpanel的ssr服务端
+forked from https://github.com/mzfqy/OneClickSsr-ssrpanel
 
 #仅支持CENTOS7
 
@@ -13,6 +14,6 @@
 
 #安装
 
-- wget https://raw.githubusercontent.com/mzfqy/OneClickSsr-ssrpanel/master/install.sh && sh install.sh
+- wget https://github.com/PlaneV/OneClickSsr-ssrpanel/raw/master/install.sh && sh install.sh
 
 - wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
