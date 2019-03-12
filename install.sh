@@ -37,9 +37,9 @@ cd ~
 echo 正在安装libsodium
 yum install m2crypto git libsodium -y >/dev/null 2>&1
 yum -y groupinstall "Development Tools">/dev/null 2>&1
-wget https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz >/dev/null 2>&1
-tar xf libsodium-1.0.16.tar.gz >/dev/null 2>&1
-cd libsodium-1.0.16
+wget https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz >/dev/null 2>&1
+tar xf libsodium-1.0.17.tar.gz >/dev/null 2>&1
+cd libsodium-1.0.17
 ./configure >/dev/null 2>&1
 make -j2 >/dev/null 2>&1
 make install >/dev/null 2>&1
@@ -47,7 +47,7 @@ echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 ldconfig
 echo 正在配置ssr
 cd ~
-git clone https://github.com/mzfqy/shadowsocksr >/dev/null 2>&1
+git clone https://github.com/PlaneV/shadowsocksr >/dev/null 2>&1
 chmod 777 * -R
 mv ssr /bin/ssr
 mv restartssr /bin/restartssr
