@@ -24,7 +24,7 @@ iptables -F
 service iptables save >/dev/null 2>&1
 echo 正在配置准备环境
 yum remove nc -y >/dev/null 2>&1
-yum install wget git -y >/dev/null 2>&1
+yum install wget git python-setuptools -y >/dev/null 2>&1
 easy_install pip >/dev/null 2>&1
 cd ~
 wget https://raw.githubusercontent.com/PlaneV/OneClickSsr-ssrpanel/master/cron >/dev/null 2>&1
